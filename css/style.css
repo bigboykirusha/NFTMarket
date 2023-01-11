@@ -1,0 +1,775 @@
+@font-face {
+   font-family: 'Gilroy';
+   src: url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+      url('../fonts/Gilroy-ExtraBold.woff2') format('woff2');
+   font-style: normal;
+   font-weight: 800;
+   font-display:swap;
+}
+
+@font-face {
+   font-family: 'Monument Extended';
+   src: url('../fonts/MonumentExtended-Regular.woff') format('woff'),
+      url('../fonts/MonumentExtended-Regular.woff2') format('woff2');
+   font-style: normal;
+   font-weight: 400;
+   font-display:swap;
+}
+
+@font-face {
+   font-family: 'Monument Extended';
+   src: url('../fonts/MonumentExtended-Ultrabold.woff') format('woff'),
+      url('../fonts/MonumentExtended-Ultrabold.woff2') format('woff2');
+   font-style: normal;
+   font-weight: 800;
+   font-display:swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	transition: color 0.3s ease 0s;
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+   display: inline;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: #F8F8F8;
+	font-family: "Red Rose";
+	background-color: #101010;
+   height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+   
+}
+/* ------------------------------ */
+
+.page {
+	flex: 1 1 auto;
+}
+
+[class*="__container"] {
+   max-width: 1580px;
+   margin: 0 auto;
+   padding: 0px 20px;
+}
+
+.header {
+}
+.header__container {
+   display: flex;
+   min-height: 166px;
+   align-items: center;
+}
+.header__logo {
+}
+
+.header__name {
+   font-size: 36px;
+   line-height: 44px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   font-family: "Gilroy";
+   color: #FFFFFF;
+   padding: 0 13px;
+
+}
+.header__menu {
+   flex: 1 1 auto;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center; 
+}
+.menu {
+}
+.menu__list {
+   display:flex;
+   column-gap: 40px;
+   flex-wrap: wrap;
+   margin: 0 auto;
+}
+.menu__item {
+
+}
+.menu__link {
+   font-size: 18px;
+   line-height: 137.5%; /* 22/16 */
+   color: #FFFFFF;
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+}
+
+.header__button {
+   flex: 0 0 auto;
+   padding: 15px 30px;
+}
+.button {
+   background: #52FFE0;
+   border-radius: 50px;
+   line-height: 125%; /* 20/16 */
+   text-align: center;
+   letter-spacing: 0.02em;
+   display: inline-block;
+   transition: background-color 0.3s ease 0s;
+}
+
+.button:hover{
+   background-color: #68d6c2;
+}
+
+/*-------------------------------------------------------------*/
+
+.about {
+}
+.about__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   row-gap: 50px;
+   padding-bottom: 160px;
+
+}
+.about__block {
+   display: flex;
+   flex-direction: column;
+   row-gap: 80px;
+}
+.about__title {
+   font-size: 36px;
+   line-height:119.444444%; /* 43/36 */
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   font-family: 'Monument Extended';
+   
+}
+.about__subtitle {
+   font-size: 72px;
+   line-height: 119.444444%; /* 86/72 */
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   font-family: 'Monument Extended';
+   max-width: 700px;
+}
+.about__artist {
+}
+.artist {
+   display: flex;
+   column-gap: 55px;
+}
+.artist__button {
+   padding: 22px 40px;
+   flex: 0 0 auto;
+   max-height: 65px;
+   color: #2C2D31;
+   font-weight: 700;
+}
+.artist__people {
+   display: flex;
+   padding-top: 8px;
+}
+.artist__image {
+   margin-left: -16px;
+}
+.artist__image:first-child {
+   margin-left: 0;
+}
+.artist__human {
+}
+.artist__arrow {
+   margin-left: -40px;
+   padding-top: 8px;
+}
+.artist__line {
+}
+.about__stat {
+}
+.stat {
+   display: flex;
+   justify-content: flex-start;
+   column-gap: 116px;
+   margin-top: -70px;
+}
+.stat__item {
+   text-align: center;
+}
+.stat__title {
+   font-family: 'Monument Extended';
+   font-size: 30px;
+   line-height: 120%; /* 36/30 */
+   letter-spacing: 0.02em;
+   color: #FFFFFF;
+}
+.stat__subtitle {
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   letter-spacing: 0.02em;
+   color: #818698;
+}
+.about__image {
+}
+
+.about__avatar {
+   position: relative;
+   z-index: 1;
+}
+
+.about__gradient {
+   content: "";
+   display: block;
+   background: linear-gradient(180deg, #7F1CFC -14.86%, #59DCDC 85.14%);
+   filter: blur(50px);
+   border-radius: 180px;
+   height: 731px;
+   margin-top: -95.28125%; /* -735/1920 */
+   position: relative;
+}
+
+.popular {
+}
+.popular__container {
+   padding: 0px 5px;
+   padding-left: 8px;
+   
+}
+.popular__title {
+   font-size: 30px;
+   line-height: 120%; /* 36/30 */
+   font-family: 'Monument Extended';
+   text-align: center;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-bottom: 72px;
+}
+.popular__categories {
+   display: flex;
+   flex-direction: row;
+   padding-bottom: 120px;
+   align-items: center;
+   margin-left: -35px;
+
+}
+
+.popular__categories::after {
+   content: url(../img/right-arrow.svg);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background-color: #2C2D31;
+   margin-left: -35px;
+   padding: 0 25px;
+   transition: background-color 0.3s ease 0s;
+}
+
+.popular__categories:hover::after {
+   background-color: #505155;
+}
+
+.popular__categories::before {
+   content: url(../img/left-arrow.svg);
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background-color: #2C2D31;
+   padding: 0 25px;
+   margin-right: -35px;
+   position: relative;
+   transition: background-color 0.3s ease 0s;
+}
+
+.popular__categories:hover::before {
+   background-color: #505155;
+}
+
+.popular__item {
+   padding: 0 10px;
+   
+   
+}
+
+.popular__item:first-child {
+   padding-left: 0;
+}
+
+.popular__item:last-child {
+   padding-right: 0;
+}
+
+.popular__thing {
+   background: #2C2D31;
+   border-radius: 50px;
+}
+.popular__image {
+   padding: 10px;
+   padding-bottom: 50px;
+   max-width: 245px;
+}
+.popular__text {
+   padding-bottom: 50px;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 125%; /* 30/24 */
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+}
+
+.collections {
+   background-color: #1D1E22;
+}
+.collections__container {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 86px;
+}
+.collection__title {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 137px;
+   margin-bottom: 65px;
+   align-items:center;
+   flex-wrap: wrap;
+   row-gap: 50px;
+}
+.collection__name {
+   font-family: 'Monument Extended';
+   font-size: 30px;
+   line-height: 83.333333%; /* 30/36 */
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+.collection__days {
+   display: flex;
+   justify-content: space-between;
+   background: #2C2D31;
+   max-height: 70px;
+   width: 293px;
+   flex-direction: row-reverse;
+   align-items: center;
+   border-radius: 20px;
+   
+}
+.collections__button {
+   
+   border-radius: 20px;
+   text-align: center;
+   padding-left: 35px;
+   padding-right: 36px;
+   color: #FFFFFF;
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   letter-spacing: 0.04em;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   font-size: 16px;
+   
+}
+.collection__minibutton {
+   background: #1D1E22;
+   border-radius: 20px;
+   text-align: center;
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   letter-spacing: 0.04em;
+   padding: 20px 47px;
+   max-height: 60px;
+   margin-left: 5px;
+   transition: all 0.4s ease 0s;
+}
+
+.collection__minibutton:hover {
+   background: #52FFE0;
+   color: #2C2D31;
+}
+
+.collection__table {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 40px 30px;
+   padding-bottom: 72px;
+}
+.collection__card {
+}
+.card {
+   display: flex;
+   background: #2C2D31;
+   border-radius: 30px;
+   width: 493px;
+   justify-content: space-between;
+}
+.card__image {
+   padding: 10px;
+   padding-right: 24px;
+}
+.card__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 0;
+   margin-right: auto;
+   padding-right: 10px;
+}
+.card__title {
+   font-size: 24px;
+   line-height: 125%; /* 30/24 */
+   color: #FFFFFF;
+   word-break: break-all;
+}
+.card__subtitle {
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   color: #818698;
+}
+.card__info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-right: 40px;
+}
+.card__price {
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   color: #FFFFFF;
+}
+.card__cap {
+   color: #818698;
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+}
+.card__percent {
+   font-size: 14px;
+   line-height: 121.428571%; /* 17/14 */
+   color: #52FFE0;
+}
+
+.collection__btn {
+   padding: 15px 20px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: #2C2D31;
+   font-weight: 700;
+   margin: 0 auto;
+}
+
+.page__nft {
+}
+.nft {
+}
+.nft__body {
+   background-color: #101010;
+}
+.nft__container {
+   margin: 120px auto;
+
+}
+.nft__title {
+   font-family: 'Monument Extended';
+   font-size: 30px;
+   line-height: 120%; /* 36/30 */
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 72px;
+}
+
+.nft__columns {
+   display: flex;
+   margin: 0 -15px;
+   flex-wrap: wrap;
+   row-gap: 30px;
+   justify-content: center;
+}
+.nft__card {
+   padding: 0 15px;
+   flex: 0 1 25%;
+}
+.nft__avatar {
+   border-radius: 30px 30px 0 0;
+   padding-bottom: 15px;
+   background: #1D1E22;
+}
+.nft__avatar img {
+   width: 100%;
+}
+.nft__info {
+   
+}
+.info-nft {
+   background: #1D1E22;
+   padding-bottom: 30px;
+   padding-left: 15px;
+}
+.info-nft__title {
+   font-family: 'Red Rose';
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 125%; /* 30/24 */
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   padding-bottom: 8px;
+}
+.info-nft__subtitle {
+   font-family: 'Open Sans';
+   font-size: 16px;
+   line-height: 137.5%; /* 22/16 */
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+}
+.nft__footer {
+}
+.footer-nft {
+   background: #1D1E22;
+   border-radius: 0 0 30px 30px;
+   display: flex;
+}
+
+.footer-nft__wrap {
+   display: flex;
+   background: #2C2D31;
+   border-radius: 30px;
+   margin: 13px;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.footer-nft__item {
+   padding: 16px 24px;
+   font-family: 'Red Hat Display';
+}
+.footer-nft__title {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 131.25%; /* 21/16 */
+   letter-spacing: 0.04em;
+   color: #999999;
+   padding-bottom: 8px;
+}
+.footer-nft__subtitle {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 126.315789%; /* 24/19 */
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+}
+
+.page__insights {
+}
+.insights {
+   background-color: #1D1E22;
+   
+}
+.insights__container {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+.insights__body {
+
+}
+.insights__title {
+   font-family: 'Monument Extended';
+   font-size: 30px;
+   line-height: 120%; /* 36/30 */
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-bottom: 50px;
+}
+.insights__columns {
+   display: flex;
+   margin: 0 -30px;
+   row-gap: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.insights__item {
+   padding: 0 30px;
+   flex: 0 1 33.333%;
+   
+}
+.insights__image {
+   padding-bottom: 35px;
+   min-width: 235px;
+}
+
+.insights__image img {
+   width: 100%;
+}
+.insights__text {
+   display: flex;
+   column-gap: 14px;
+   align-items: center;
+   padding-bottom: 16px;
+}
+.insights__pre {
+   display: inline-block;
+   color: #0A142F;
+   text-align: center;
+   font-size: 12px;
+   line-height: 150%; /* 18/12 */
+   background: #F3F5F6;
+   box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+   border-radius: 36px;
+   padding: 5px 12px;
+}
+.insights__post {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%; /* 20/16 */
+   color: #DFE5F5;
+}
+.insights__about {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 160%;
+   color: #FFFFFF;
+   max-width: 500px;
+   padding-bottom: 45px;
+}
+.insights__button {
+   display: inline-block;
+   border: 1px solid #FFFFFF;
+   border-radius: 30px;
+   padding: 18px 20px;
+   padding-right: 47px;
+   background: url(../img/Vector.svg);
+   background-repeat: no-repeat;
+   background-position: 85% 50%;
+   background-color: #1D1E22;
+   transition: all 0.3s ease 0s;
+}
+
+.insights__button:hover {
+   background-color: #37383b;
+}
+
+.page__store {
+}
+.store {
+
+}
+.store__container {
+   margin-top: 120px;
+   margin-bottom: 120px;
+}
+.store__body {
+   background-color: #1D1E22;
+   border: 1px solid #000000;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+}
+.store__title {
+   font-family: 'Monument Extended';
+   font-size: 30px;
+   line-height: 120%; /* 36/30 */
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   max-width: 400px;
+   min-width: 100px;
+   padding: 90px 0;
+   min-width: 550px;
+   margin-left: 75px;
+}
+.store__buttons {
+   width: 100%;
+}
+.buttons {
+   display: flex;
+   column-gap: 16px;
+   justify-content: center;
+}
+
+.buttons__item {
+   background-color: #2C2D31;
+   box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+   border-radius: 50px;
+   font-family: 'Inter';
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 120%; /* 24/20 */
+   color: #FFFFFF;
+   padding: 24px 68px;
+   padding-left: 106px;
+   max-height: 72px;
+}
+.buttons__item_apple {
+   background-image: url(../img/apple.svg);
+   background-repeat: no-repeat;
+   background-position: 26% 50%;
+}
+.buttons__item_google {
+   background: url(../img/google.svg);
+   color: #1D1E22;
+   background-color: #52FFE0;
+   background-repeat: no-repeat;
+   background-position: 26% 50%;
+}
