@@ -123,7 +123,6 @@ body {
 .header__name {
    font-size: 36px;
    line-height: 44px;
-   text-align: center;
    letter-spacing: 0.02em;
    font-family: "Gilroy";
    color: #FFFFFF;
@@ -284,6 +283,70 @@ body {
    position: relative;
 }
 
+@media (max-width: 500px) {
+   .header__container {
+      flex-wrap: wrap;
+      row-gap: 20px;
+      justify-content: center;
+      margin-top: 15px;
+      margin-bottom: 30px;
+   }
+   
+   .menu {
+      flex-wrap: wrap;
+      row-gap: 20px;
+      justify-content: center;
+      flex-direction: column;
+   }
+   .menu__list {
+      row-gap: 10px;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .about__title {
+      font-size: 24px;
+      font-family: 'Monument Extended';
+      width: 100%;
+      text-align: center;
+  }
+   .about__block {
+      width: 100%;
+      row-gap: 40px;
+   }
+   .about__subtitle {
+      font-size: 40px;
+      text-align: center;
+      margin: 0px -20px;
+   }
+   .artist__arrow {
+      display: none;
+   }
+   .artist__people {
+      display: none;
+   }
+   .about__artist {
+      justify-content: center;
+   }
+   .stat {
+      column-gap: 0px;
+      justify-content: space-between;
+   }
+   .artist__button {
+      margin-bottom: 70px;
+   }
+   .about__image img {
+      width: 100%;
+   }
+   .about__gradient {
+      display: none;
+   }
+
+   .about__container {
+      padding-bottom: 70px;
+   }
+}
+
 .popular {
 }
 .popular__container {
@@ -307,7 +370,7 @@ body {
    padding-bottom: 120px;
    align-items: center;
    margin-left: -35px;
-
+   row-gap: 20px;
 }
 
 .popular__categories::after {
@@ -554,6 +617,7 @@ body {
    border-radius: 30px 30px 0 0;
    padding-bottom: 15px;
    background: #1D1E22;
+   min-width: 280px;
 }
 .nft__avatar img {
    width: 100%;
@@ -641,6 +705,49 @@ body {
    color: #FFFFFF;
    padding-bottom: 50px;
 }
+
+@media (max-width: 1000px) {
+   .insights__title, .collection__name{
+   text-align: center;
+   }
+   .collection__title {
+      padding-top: 80px;
+   }
+   .nft__container {
+      margin-top: 80px;
+   }
+   .collection__days {
+      margin: 0 auto;
+   }
+   .store__body {
+      flex-wrap: wrap;
+   }
+   .nft__title {
+      text-align: center;
+   }
+}
+
+@media (max-width: 1650px) {
+   .popular__categories::after, .popular__categories::before {
+      display: none;
+   }
+   .popular__categories {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0px;
+   }
+   .popular__item:first-child {
+      padding-left: 10px;
+   }
+   
+   .popular__item:last-child {
+      padding-right: 10px;
+   }
+}
+
+
+
+
 .insights__columns {
    display: flex;
    margin: 0 -30px;
@@ -655,7 +762,7 @@ body {
 }
 .insights__image {
    padding-bottom: 35px;
-   min-width: 235px;
+   min-width: 280px;
 }
 
 .insights__image img {
@@ -734,11 +841,19 @@ body {
    letter-spacing: 0.04em;
    color: #FFFFFF;
    max-width: 400px;
-   min-width: 100px;
    padding: 90px 0;
-   min-width: 550px;
    margin-left: 75px;
 }
+
+@media (max-width: 400px) {
+   .store__title {
+      margin-left: 0px;
+      padding-left: 32px;
+      padding-right: 32px;
+      text-align: center;
+   }   
+}
+
 .store__buttons {
    width: 100%;
 }
@@ -746,6 +861,9 @@ body {
    display: flex;
    column-gap: 16px;
    justify-content: center;
+   flex-wrap: wrap;
+   row-gap: 20px;
+   align-items: center;
 }
 
 .buttons__item {
@@ -771,5 +889,134 @@ body {
    color: #1D1E22;
    background-color: #52FFE0;
    background-repeat: no-repeat;
-   background-position: 26% 50%;
+   background-position: 20% 50%;
+   padding-left: 89px;
+   margin-bottom: 25px;
+   margin-top: 25px;
+}
+
+.footer {
+   background-color: #1D1E22;
+   
+}
+.footer__container {
+   margin-top: 48px;
+   margin-bottom: 48px;
+}
+.footer__body {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   column-gap: 200px;
+   justify-content: space-between;
+}
+.footer__head {
+   display: flex;
+   align-items: center;
+}
+.footer__logo {
+}
+.header__logo {
+}
+.footer__name {
+}
+.header__name {
+}
+.footer__blocks {
+   display: flex;
+   column-gap: 100px;
+}
+.footer__block {
+   
+}
+.block-footer {
+   font-size: 16px;
+   line-height: 188%;
+   color: #DFE5F5;
+   
+}
+
+.block-footer__item:first-child {
+   font-family: 'Monument Extended';
+   font-size: 18px;
+   line-height: 1;
+   color: #FFFFFF;
+   padding-bottom: 20px;
+}
+.block-footer__item {
+}
+.footer__bigbutton {
+   display: flex;
+   flex-direction: column;
+   background-color: #52FFE0;
+   border-radius: 30px;
+   padding: 80px 48px;
+   row-gap: 15px;
+}
+.bigbutton__title {
+   font-family: 'Monument Extended';
+   font-size: 24px;
+   line-height: 120.833333%; /* 29/24 */
+   letter-spacing: 0.04em;
+   color: #1D1E22;
+   max-width: 400px;
+}
+.bigbutton__subtitle {
+   font-size: 16px;
+   line-height: 1;
+   color: #1D1E22;
+   background-image: url(../img/plane.png);
+   background-position: 98% 50%;
+   background-repeat: no-repeat;
+   padding-top: 5px;
+}
+.bigbutton__image {
+}
+
+.links {
+   background-color: #1D1E22;
+}
+.links__container {
+   margin-bottom: 48px;
+}
+.links__body {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.links__item {
+   font-size: 16px;
+   line-height: 1.88;
+   color: #DFE5F5;
+}
+.links__icons {
+   display: flex;
+   column-gap: 24px;
+
+}
+.links__icon {
+}
+
+.links__icon img{
+   width: 100%;
+}
+
+@media (max-width: 1000px) {
+   .footer__body {
+      flex-direction: column;
+      row-gap: 60px;
+   }
+
+   .footer__blocks {
+      flex-direction: column;
+      row-gap: 60px;
+   }
+   .bigbutton {
+      display: none;
+   }
+   .links__body {
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: center;
+   }
 }
