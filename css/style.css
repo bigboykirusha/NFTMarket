@@ -290,6 +290,7 @@ body {
       justify-content: center;
       margin-top: 15px;
       margin-bottom: 30px;
+      flex-direction: column;
    }
    
    .menu {
@@ -309,7 +310,7 @@ body {
       font-family: 'Monument Extended';
       width: 100%;
       text-align: center;
-  }
+   }
    .about__block {
       width: 100%;
       row-gap: 40px;
@@ -845,7 +846,7 @@ body {
    margin-left: 75px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 470px) {
    .store__title {
       margin-left: 0px;
       padding-left: 32px;
